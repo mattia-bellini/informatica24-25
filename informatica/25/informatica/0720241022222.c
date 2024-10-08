@@ -12,6 +12,11 @@
 
         printf("inserire un valore: ");
         scanf("%d", &num);
+        q=num/10;
+        r=num%10;
+        q=r/10;
+        r=r%10;
+
 
         
     }
