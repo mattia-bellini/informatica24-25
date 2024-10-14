@@ -65,19 +65,4 @@ verificare se la data è accettabile*/
 
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
