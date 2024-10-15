@@ -20,8 +20,8 @@ scanf("%d", &anno1);
 
 if(anno%100==0){
         if(anno%400==0){
-            printf("l'anno è bisestile");
-            bisestile=1;
+            printf("\n l'anno è bisestile");
+             bisestile=1;
         }
         else{
             printf("\nl'anno non è bisestile");
@@ -29,18 +29,18 @@ if(anno%100==0){
     }
     else{
         if(anno%4==0){
-            printf("l'anno è bisestile");
-            bisestile=1;
+            printf("\n l'anno è bisestile");
+                bisestile=1;
         }
     }
 
     if(mese>0 && mese<13){
         if(mese==2){
             if(giorno>0 && giorno<29+bisestile){
-            printf("\nla data è accettabile");
+                printf("\nla data è accettabile");
             }
             else{
-            printf("\nla data non è accettabile");
+                printf("\nla data non è accettabile");
             }
         }
         else{
@@ -49,15 +49,15 @@ if(anno%100==0){
                     printf("\nla data  accettabile");
                 }
                 else{
-            printf("\nla data non è accettabile");
-            }
+                 printf("\nla data non è accettabile");
+                }
             }
             else{
                 if(giorno>0 && giorno<32){
                     printf("\nla data  accettabile");
-                }
+             }
                 else{
-            printf("\nla data non è accettabile");
+                    printf("\nla data non è accettabile");
             }
         }
     }
@@ -67,8 +67,8 @@ if(anno%100==0){
     }
     if(anno1%100==0){
         if(anno1%400==0){
-            printf("l'anno è bisestile");
-            bisestile1=1;
+            printf("\n l'anno è bisestile");
+             bisestile1=1;
         }
         else{
             printf("\nl'anno non è bisestile");
@@ -76,18 +76,18 @@ if(anno%100==0){
     }
     else{
         if(anno1%4==0){
-            printf("l'anno è bisestile");
-            bisestile1=1;
+            printf("\n l'anno è bisestile");
+                bisestile1=1;
         }
     }
 
     if(mese1>0 && mese1<13){
         if(mese1==2){
             if(giorno1>0 && giorno1<29+bisestile1){
-            printf("\nla data è accettabile");
+                 printf("\nla data è accettabile");
             }
             else{
-            printf("\nla data non è accettabile");
+                 printf("\nla data non è accettabile");
             }
         }
         else{
@@ -96,7 +96,7 @@ if(anno%100==0){
                     printf("\nla data  accettabile");
                 }
                 else{
-            printf("\nla data non è accettabile");
+                    printf("\nla data non è accettabile");
             }
             }
             else{
@@ -114,31 +114,24 @@ if(anno%100==0){
     }
 
 if(anno<anno1)
-printf(" la data più rcente è la seconda");
+    printf("\n la data più recente è la seconda");
 else if(anno>anno1)
     printf("la prima data è più recente");
 
 else{
     if(mese<mese1)
-    printf("la seconda data è più recente");
+        printf("\n la seconda data è più recente");
     else if(mese>mese1)
-    printf("la prima data è più recente");
+         printf("\n la prima data è più recente");
     else{
         if (giorno<giorno1)
-        printf("la seconda data è più recente");
+             printf("\n la seconda data è più recente");
         else if(giorno>giorno1)
-        printf("la prima data è più recente");
+            printf("\n la prima data è più recente");
+        else
+             printf("\n le due date sono uguali");
     }
 }
  
     
-
-
-
-
-
-
-
-
-
 }
