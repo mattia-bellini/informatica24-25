@@ -8,8 +8,8 @@ int main(){
     int num;
     printf("inserisci un numero: ");
     scanf("%d", &num);
+    ()
     
-    if ()
     
 
     

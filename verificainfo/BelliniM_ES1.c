@@ -6,21 +6,9 @@ ES: 3 è composto da 1 cifra e supponendo k=5 allora k compare 0 volte, 56 è co
 da 2 cifre e k compare 1 volta*/
 
 #include <stdio.h>
-
- int main(){
-    int numero
-    int contatore
-    char k=0;
-    printf("inserisci il valore: ");
-    scanf("%d", &numero);
-    prinitf("inserisci il valore k: ");
-    scanf("%c", &k);
+int contatore;
+int
     
-
-        if(numero>=0   &&  numero<=9999)
-            else{
-            printf("il numero che hai scelto non è valido");
-            }
             
             
- }
+ 
