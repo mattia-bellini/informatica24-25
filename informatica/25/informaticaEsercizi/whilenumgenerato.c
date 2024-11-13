@@ -8,6 +8,6 @@ int main(){
     n=random()%991+10;
 
     while(n!=n1){
-        printf("inserisci un numero:",%n1)
+        printf("inserisci un numero:",%n1);
     }
 }
