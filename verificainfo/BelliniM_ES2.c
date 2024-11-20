@@ -1,7 +1,7 @@
 #include <stdio.h>
 
  int main(){
-    int valore1, valore2, valore3, valore4, somma, media;
+    int valore1, valore2, valore3, valore4, somma;
     float media;
     
     printf("\ninserire il primo  valore: ");
@@ -15,7 +15,7 @@
     somma=valore1+valore2;
     media=somma/2;
     if(somma>200)
-    printf("\nla somma supera 200 e la mediaè %.2f", &media);
+    printf("\nla somma supera 200 e la media è %.2f", &media);
     else{
         printf("\ninserire il terzo valore");
         somma=valore1+valore2+valore3;
@@ -27,12 +27,11 @@
             printf("\ninserire il quarto valore");
         somma=valore1+valore2+valore3+valore4;
         media=somma/2;
-        if(somma>200);
+        if(somma>200)
         printf("\ni quattro valori superano 200 e la loro media è %.2f", &media);
         }
     }
-else
-    printf("i quattro valori non superano 200); 
+
 
 
  }
