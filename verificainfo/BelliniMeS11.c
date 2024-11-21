@@ -17,7 +17,7 @@ int main(){
     
     if(anno%100==0){
      if(anno%400==0){
-    printf("\nl'anno è bisestile");
+    printf("l'anno è bisestile");
     bisestile=1;
      }
      else
@@ -27,26 +27,26 @@ int main(){
             if(mese>0&&mese<=12){
             if(mese==2){
                 if(giorno>=1 && giorno<=28+bisestile);
-                printf("\nla data è accettabile");
+                printf("la data è accettabile");
             }
             else{
-                printf("\nla data non è accettabile");
+                printf("la data non è accettabile");
             }
             else  {
                 if(mese==11 || mese==4 || mese==9){
                     if(giorno>=1 && giorno<=30){
-                        printf("\nla data è accettabile");
+                        printf("la data è accettabile");
                     }
                 }
                 else{
-                printf("\nla data non è accettabile");
+                printf("la data non è accettabile");
             }
             else{
             if(giorno>=1 && giorno<=31){
-                        printf("\nla data è accettabile");
+                        printf("la data è accettabile");
          }
          else{
-                printf("\nla data non è accettabile");
+                printf("la data non è acettabile");
             }
 
 

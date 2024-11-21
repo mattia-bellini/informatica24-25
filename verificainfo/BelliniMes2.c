@@ -3,22 +3,40 @@
 
 
 #include<stdio.h>
-
+#include<stdlib.h>
+#include <time.h>
 int main(){
-int n,c;
+    srand(time(NULL));
+int n,c, m;
+n=rand()%19-1+1;
+c=rand()%9-1+1;
+printf("il primo numero inserito è %d", n);
+printf("il secondo numero inserito è %d", c);
 
-printf("inserisci il primo numero: ");
-scanf("%d", &n);
-printf("inserisci il secondo numero: ");
-scanf("%d", &c);
+m=c+c;
 
-
-
-
-
-
-
-
-
-
+if(m<n)
+printf("&d", m);
+m=m+c;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
