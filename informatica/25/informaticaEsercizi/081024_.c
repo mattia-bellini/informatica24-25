@@ -44,7 +44,7 @@ verificare se la data è accettabile*/
             else{
                 printf("\nla data non è accettabile");
             }
-            else{
+            else  {
                 if(mese==11 || mese==4 || mese==9){
                     if(giorno>=1 && giorno<=30){
                         printf("\nla data è accettabile");
