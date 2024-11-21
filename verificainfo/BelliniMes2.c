@@ -15,7 +15,23 @@ printf("il secondo numero inserito è %d", c);
 
 m=c+c;
 
-if(m<n)
+if(m<n){
+printf("&d", m);
+m=m+c;
+}
+if(m<n){
+printf("&d", m);
+m=m+c;
+}
+if(m<n){
+printf("&d", m);
+m=m+c;
+}
+if(m<n){
+printf("&d", m);
+m=m+c;
+}
+if(m<n){
 printf("&d", m);
 m=m+c;
 }
