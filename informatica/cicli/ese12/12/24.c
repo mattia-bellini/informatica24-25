@@ -19,4 +19,5 @@ for(int i=0;i<n; i++){
         sommaP+=num;
 }
     printf("il numero della somma dei numeri positivi è %d,\n mentre la somma di quelli negativi è %d", sommaP,sommaNG);
+    return 0;
 }
