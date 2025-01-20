@@ -38,6 +38,7 @@ int main(){
     scanf("%d", &num);
 
      }
+     printf("Sono stati inseriti %d valori", cnt);
         }
 
 
