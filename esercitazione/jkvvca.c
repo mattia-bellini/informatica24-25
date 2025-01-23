@@ -10,7 +10,7 @@ printf("iserisci un numero: ");
 scanf("%d", &num);
 }while(num<0);
 for(int i=0; i<=num;i++){
-    eehhhhhhh
+  
 
 }
 
