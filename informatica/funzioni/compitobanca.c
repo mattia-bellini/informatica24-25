@@ -83,7 +83,7 @@ void mostra_saldo(float _saldo, int _decimali){
     }
 }
 void mostra_menu(){
-    sleep(5);
+    sleep(1);
     system("clear");
     printf("Menù della banca\n");
     printf("1.Deposta soldi sul tuo conto\n");
