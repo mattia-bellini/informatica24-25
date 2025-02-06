@@ -85,7 +85,7 @@ void mostra_saldo(float _saldo, int _decimali){
 void mostra_menu(){
     sleep(5);
     system("clear");
-    printf("Menù della banca Bushaj\n");
+    printf("Menù della banca\n");
     printf("1.Deposta soldi sul tuo conto\n");
     printf("2.Preleva soldi\n");
     printf("3.Mostra saldo\n");
