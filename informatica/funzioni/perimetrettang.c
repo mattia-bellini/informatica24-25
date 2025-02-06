@@ -6,7 +6,7 @@ dati i valori della base e dell'altezza
 #include <stdio.h>
 
 int mian(){	
-float base,altezza,permetro;
+float base,altezza,perimetro;
 
 	base=0;
 		altezza=0;
