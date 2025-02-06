@@ -22,7 +22,7 @@ quoz=_num;
 while(quoz!=0){
 resto=quoz%2;
 quoz=quoz/2;
-_conv+=restopow(10,cnt);
+_conv+=resto*pow(10,cnt);
 cnt++;
 }
 return _conv;
