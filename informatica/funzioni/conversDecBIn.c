@@ -13,7 +13,7 @@ printf("Inserisci un numero: ");
 scanf("%d", &num);
 }while(num<=0);
 conv=converti(num);
-printf("%ld\n", _conv);
+printf("%ld\n", conv);
 }
 long  converti(int _num){                   
 int quoz=0,resto=0,cnt=0;
