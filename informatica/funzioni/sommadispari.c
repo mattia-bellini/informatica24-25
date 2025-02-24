@@ -16,10 +16,18 @@ do{
     printf("inserisci un numero: ");
     scanf("%d", &num);
 }while(num<0);
-contaqaud( n, &quadrato);
+contaqaud( num, &quadrato);
 }
 void contaqaud(int _n, int*_quadrato){
-for()
+    int c=1;
+for(int i=1;i<=_n;i++){
+    if(c%2==1){
+        printf("%d,", c);
+        *_quadrato+=c;
+        c+=2;
+    }
+
+}
 
 
 
