@@ -1,9 +1,12 @@
 body{
     background:#7b68ee;
-    margin: 0px;/*distanza dalla pagina*/
+    margin: 0px; /*distanza dalla pagina*/
+font-family: 'Open Sans', san-serif;
+}
     #container{
         width: 960px;
-        margin: 20px auto;   /*spazio dal margine della pagina,AUTO te loposiziona al centro*/
-        border: 2px red solid;
+        margin: 0px auto;   /*spazio dal margine della pagina,AUTO te loposiziona al centro*/
+        /*border: 2px red solid;*/
+        background: #fff;
     }
-}
+
