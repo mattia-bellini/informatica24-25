@@ -1,3 +1,9 @@
 body{
-    background:#e89900;
+    background:#7b68ee;
+    margin: 0px;/*distanza dalla pagina*/
+    #container{
+        width: 960px;
+        margin: 20px auto;   /*spazio dal margine della pagina,AUTO te loposiziona al centro*/
+        border: 2px red solid;
+    }
 }
