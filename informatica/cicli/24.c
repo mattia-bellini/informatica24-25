@@ -9,7 +9,6 @@ do{
     printf("inserisci il numero di valori che vengano inseriti: ");
         scanf("%d",&n);
 }   while(n<=5);
-
 for(int i=0;i<n; i++){
     printf("inserisci un numero: ");
         scanf("%d", &num);
