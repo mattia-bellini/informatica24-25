@@ -9,6 +9,6 @@ int main(){
 int v[DIM]={0};
 
 richiedValori(vettore,DIM);
-stampaVett(vettore,DIM,"-");
+stampaVett(vettore,DIM,'-');
 
 }
