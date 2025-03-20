@@ -21,6 +21,6 @@ while(i<dim){
 }
 void stampaVett(int vett,int dim,char sep){
     for (int i=0;i<dim;i++){
-        printf("%d%c"vett[i], sep);
+        printf("%d%c",vett[i], sep);
     }
 }

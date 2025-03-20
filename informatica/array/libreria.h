@@ -2,5 +2,5 @@
 prototipi delle funzioni
 */
 
-void richiediValori(int vett[],int dim);
-void stampaVett(int vett,int dim,char sep);
+void richiediValori(int vett[],int DIM);
+void stampaVett(int vett[],int dim,char sep);
