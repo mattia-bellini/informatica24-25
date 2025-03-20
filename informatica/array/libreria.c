@@ -19,8 +19,16 @@ while(i<dim){
 }
 
 }
-void stampaVett(int vett,int dim,char sep){
+void stampaVett(int vett[],int dim,char sep){
     for (int i=0;i<dim;i++){
         printf("%d%c",vett[i], sep);
     }
+}
+float calcolamedia(int v[], int n) {
+    int somma = 0;
+    for (int i = 0; i < n; i++){
+        somma= somma+v[i]; 
+    }
+
+    return (float)somma/n;
 }
