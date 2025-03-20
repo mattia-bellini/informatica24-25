@@ -6,18 +6,20 @@ sviluppiamo le funzioni
 
 void richiediValori(int vett[],int dim){
 
-int n=0;
+int n=0, i=0;
 
-for(int i=0; i<dim;i++){
+while(i<dim){
     printf("inserisci valore: ");
     scanf("%d",&n);
-    if(n%2==0)
-    vett[i]=n;
+    if(n%2==0){
+        i++;
+    }
+    
 
 }
-return 0;
+
 }
-stampaVett(int vett,int dim,char sep){
+void stampaVett(int vett,int dim,char sep){
     for (int i=0;i<dim;i++){
         printf("%d%c"vett[i], sep);
     }
