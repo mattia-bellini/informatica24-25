@@ -116,3 +116,17 @@ for(int i=0;i<DIM;i++){
     v2[i]=scmb;
 }
 }
+void bubbleSort(int vett[],int dim, ){
+    int temp;
+    for(int i=0;i<dim;i++ ){
+        for(int j=0;j<dim-1-i;j++){
+            if(vett[j]>vett[j+1]){
+               temp=vett[j];
+               vett[j]=vett[j+1];
+               vett[j+1]=temp;
+            }
+
+        }
+
+    }
+}
