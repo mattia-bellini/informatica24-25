@@ -19,9 +19,9 @@ while(i<dim){
 }
 
 }
-void stampaVett(int vett[],int dim,char sep){
+void stampaVett(int v1[],int dim,char sep){
     for (int i=0;i<dim;i++){
-        printf("%d%c",vett[i], sep);
+        printf("%d%c",v1[i], sep);
     }
 }
 float calcolamedia(int v[], int n) {
@@ -127,6 +127,13 @@ void bubbleSort(int vett[],int dim, ){
             }
 
         }
+
+    }
+}
+void caricaCasuale(int v1[],int dim,int min,int max){
+  
+    for(int i=0; i<dim;i++){
+        v1[i]=rand()%(max-min)+min;
 
     }
 }
