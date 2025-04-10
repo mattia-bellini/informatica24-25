@@ -43,7 +43,5 @@ sommavett=SommaVettore(vett,DIM,&cnt);
 StampaVettore(vett,DIM);
 printf("I %d elementi sommati valgono: %d",cnt,sommavett);
 
-	
-	
 }
 }

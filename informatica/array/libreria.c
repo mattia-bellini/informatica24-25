@@ -137,3 +137,10 @@ void caricaCasuale(int v1[],int dim,int min,int max){
 
     }
 }
+void caricaVettore(int vett[],int dim ){
+	int i=0;
+	printf("Inserisci un elemento: ");
+	for(i=0;i<dim;i++){
+		scanf("%d\n",&vett[i]);
+	}	
+}
