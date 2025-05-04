@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Intelligente </title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <div id="titolo">
+      <h1>Casa Intelligente /h1>
+      <h3>Casa creata tramite uso di Arduino</h3>
+    </div>
+
+    <div id="scopo">
+      <p>Il nostro progetto prevede la creazione di una Casa che,
+         grazie a sensori e dispositivi automatizzati,
+         esegue azioni intelligenti per migliorare sicurezza e comfort.
+      </p>
+      <div id="foto1">
+        <img src="casa.jpeg" alt="Casa Intelligente">
+      </div>
+    </div>
+
+    <div id="componenti">
+      <h2>Componenti Utilizzati</h2>
+      <p>Abbiamo utilizzato un sensore ad ultrasuoni, buzzer, fotoresistore, LED, uno schermo LCD 16x2,un potenziometro,resisstenze</p>
+      <img src="sensori.jpg" alt="Sensori utilizzati">
+    </div>
+
+    <div id="realizzazione">
+      <h2>Come è stato realizzato?</h2>
+      <ol>
+        <li>
+            Rilevamento intrusi<br> 
+            Il sensore HC-SR04 misura la distanza di oggetti davanti a sé.<br>
+             Se rileva un oggetto entro 15 cm, attiva il buzzer e sullo schermo LCD 
+             appare il messaggio di "ALLARME INTRUSO!" con la distanza rilevata.<br>
+        </li>
+        <li>
+            Controllo luminosità con LED<br>
+            Il fotoresistore misura la luminosità ambientale.<br>
+             Se la luminosità scende sotto una soglia, il LED si accende.<br>
+             Se la luminosità supera la soglia, il LED si spegne.<br>
+
+
+        </li>
+        <li>
+            Visualizzazione su LCD<br>
+            La scritta “ALLARME INTRUSO!” e la distanza se viene rilevato un oggetto vicino
+
+Altrimenti, solo la distanza rilevata
+        </li>
+      </ol>
+      <img src="montaggio.jpg" alt="Montaggio circuito">
+    </div>
+
+    <div id="risultato">
+      <h2>Risultato Finale</h2>
+      <img src="finale.jpg" alt="Progetto completato">
+      <video controls>
+        <source src="video.mp4" type="video/mp4">
+        Il tuo browser non supporta il video.
+      </video>
+    </div>
+
+    <footer>
+      <p style="font-size: 13px">Crediti: Nome del Team, 2025</p>
+    </footer>
+  </div>
+</body>
+</html>
+
+
+    
