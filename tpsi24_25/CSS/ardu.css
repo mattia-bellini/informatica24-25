@@ -1,74 +1,69 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #121212; /* Sfondo scuro */
-  color: #E0E0E0; /* Testo chiaro */
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #121212;
+  color: #E0E0E0;
 }
 
 #sfondo {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1100px;
   margin: auto;
   padding: 20px;
-  box-sizing: border-box;
+  animation: fadeIn 1s ease-out;
 }
 
-#titolo, #scopo, #componenti, #realizzazione, #risultato {
-  text-align: center;
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+header, section, footer {
+  background-color: #1E1E1E;
+  border-radius: 10px;
   padding: 20px;
-  background-color: #1E1E1E; /* Sfondo leggermente più chiaro */
-  border-radius: 8px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-h1, h2, h3 {
-  margin: 0;
-  color: #BB86FC; /* Testo viola per un tocco elegante */
+h1, h2 {
+  color: #BB86FC;
+  margin-bottom: 10px;
 }
 
-p {
+h3 {
+  color: #03DAC6;
+  margin-top: 15px;
+}
+
+p, li {
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
 }
 
 img, video {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: auto;
-  border-radius: 6px;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+.box-funzionalita {
+  background-color: #2A2A2A;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 15px 0;
 }
 
 footer {
   text-align: center;
-  padding: 10px;
-  background-color: #1E1E1E;
-  border-radius: 8px;
-}
-#menu {
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  z-index: 1000;
-}
-
-#menu select {
-  padding: 8px;
-  font-size: 16px;
-  background-color: #1E1E1E;
-  color: #E0E0E0;
-  border: 1px solid #BB86FC;
-  border-radius: 5px;
-}
-
-
-/* Animazione fade-in */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-#sfondo {
-  animation: fadeIn 1s ease-out;
+  font-size: 14px;
+  color: #AAAAAA;
 }

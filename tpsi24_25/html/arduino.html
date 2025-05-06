@@ -1,79 +1,69 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casa Intelligente </title>
-    <link rel="stylesheet" href="1.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casa Intelligente con Arduino</title>
+  <link rel="stylesheet" href="1.css">
 </head>
 <body>
-    <div id="titolo">
-      <h1>Casa Intelligente </h1>
-      <h3>Casa creata tramite uso di Arduino</h3>
-    </div>
+  <div id="sfondo">
+    <header id="titolo">
+      <h1>Casa Intelligente</h1>
+      <h3>Progetto Arduino – Classe 3ª Superiore</h3>
+    </header>
 
-    <div id="scopo">
-      <p>Il nostro progetto prevede la creazione di una Casa che,
-         grazie a sensori e dispositivi automatizzati,
-         esegue azioni intelligenti per migliorare sicurezza e comfort.
-      </p>
-      <div id="foto1">
-        <img src="casa.jpeg" alt="">
-      </div>
-    </div>
+    <section id="scopo">
+      <h2>Scopo del Progetto</h2>
+      <p>Il nostro obiettivo è realizzare una <strong>casa intelligente</strong> in miniatura, in grado di <strong>rilevare intrusi</strong>, <strong>adattarsi alla luce ambientale</strong> e <strong>fornire feedback visivo</strong> grazie a sensori e componenti elettronici gestiti da <strong>Arduino</strong>.</p>
+      <img src="casa.jpeg" alt="Casa intelligente in miniatura">
+    </section>
 
-    <div id="componenti">
+    <section id="componenti">
       <h2>Componenti Utilizzati</h2>
-      <p>Abbiamo utilizzato un sensore ad ultrasuoni, buzzer, fotoresistore, LED, uno schermo LCD 16x2,un potenziometro,resistenze</p>
-      <img src="sensori.jpg" alt="">
-    </div>
+      <ul>
+        <li>Sensore ad ultrasuoni HC-SR04</li>
+        <li>Buzzer piezoelettrico</li>
+        <li>Fotoresistore (LDR)</li>
+        <li>LED</li>
+        <li>Display LCD 16x2</li>
+        <li>Potenziometro</li>
+        <li>Resistenze</li>
+        <li>Microcontrollore Arduino Uno</li>
+      </ul>
+      <img src="sensori.jpg" alt="Componenti elettronici usati">
+    </section>
 
-    <div id="realizzazione">
-      <h2>Come è stato realizzato?</h2>
-      <p>
-    1-Rilevamento intrusi<br> 
-        Il sensore HC-SR04 misura la distanza di oggetti davanti a sé.<br>
-         Se rileva un oggetto entro 15 cm, attiva il buzzer e sullo schermo LCD 
-         appare il messaggio di "ALLARME INTRUSO!" con la distanza rilevata.<br>
-        
-    2-Controllo luminosità con LED<br>
-         Il fotoresistore misura la luminosità ambientale.<br>
-         Se la luminosità scende sotto una soglia, il LED si accende.<br>
-         Se la luminosità supera la soglia, il LED si spegne.<br>
+    <section id="realizzazione">
+      <h2>Come Funziona?</h2>
+      <div class="box-funzionalita">
+        <h3>1. Rilevamento Intrusi</h3>
+        <p>Il sensore ad ultrasuoni misura la distanza: se rileva un oggetto entro <strong>15 cm</strong>, il buzzer si attiva e il display mostra <strong>“ALLARME INTRUSO!”</strong> con la distanza.</p>
+      </div>
+      <div class="box-funzionalita">
+        <h3>2. Controllo della Luce</h3>
+        <p>Con un fotoresistore, il sistema accende il LED se la luminosità ambientale è bassa, e lo spegne se è sufficiente.</p>
+      </div>
+      <div class="box-funzionalita">
+        <h3>3. Visualizzazione LCD</h3>
+        <p>Il display mostra sempre la distanza rilevata e, in caso di intrusione, mostra un messaggio di avviso.</p>
+      </div>
+      <img src="montaggio.jpg" alt="Montaggio circuito">
+    </section>
 
-
-      
-    3-Visualizzazione su LCD<br>
-        La scritta “ALLARME INTRUSO!” e la distanza se viene rilevato un oggetto vicino
-
-Altrimenti, solo la distanza rilevata
-    </p>
-      <img src="montaggio.jpg" alt="">
-    </div>
-
-    <div id="risultato">
+    <section id="risultato">
       <h2>Risultato Finale</h2>
-      <img src="finale.jpg" alt="">
+      <p>Qui puoi vedere il progetto completo in funzione, con tutti i componenti integrati nella struttura della casa.</p>
+      <img src="finale.jpg" alt="Casa Arduino completata">
       <video controls>
         <source src="video.mp4" type="video/mp4">
         Il tuo browser non supporta il video.
       </video>
-    </div>
+    </section>
 
     <footer>
-      <p style="font-size: 13px">Crediti: Nome del Team, 2025</p>
+      <p>Realizzato da: Nome del Team • Anno: 2025</p>
     </footer>
   </div>
-  <div id="menu">
-    <select onchange="location = this.value;">
-      <option selected disabled>Menù</option>
-      <option value="immagini.html">IMMAGINI</option>
-      <option value="video.html">VIDEO</option>
-    </select>
-  </div>
-  
 </body>
 </html>
-
-
-    
