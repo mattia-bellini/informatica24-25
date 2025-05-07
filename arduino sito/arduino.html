@@ -4,10 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Progetto Arduino</title>
-  <link rel="stylesheet" href="ardu.css" />
+  <link href="ardu.css" rel="stylesheet" type="text/css">
+</head>
   <style>
+    #navbar{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #000000;
+      border-bottom: 1px solid #ccc;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
     .menu-toggle {
       display: none;
+      right: 20px
     }
 
     .hamburger {
@@ -50,6 +64,7 @@
 
 </head>
 <body>
+  <div id ="navbar">
   <label>
     <input type="checkbox" class="menu-toggle" />
     <div class="hamburger">
@@ -61,6 +76,7 @@
       <a href="procedimento.html">Procedimento</a>
     </nav>
   </label>
+  </div>
 
   <div class="container">
     <h1>Monitoraggio Temperatura con Arduino</h1>

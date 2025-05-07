@@ -1,4 +1,4 @@
-/*dato un array ordinato inserire un nuovo lemento all'interno dell'array*/
+
 /* Dato un array ordinato, inserire un nuovo elemento all'interno dell'array mantenendo l'ordine */
 
 #include <stdio.h>
