@@ -15,7 +15,7 @@ Il programma deve permettere, tramite menù:
     int main(){
     int *numeri=NULL; //array dinamico 
     int dimensione=0;//quanti elementi ci sono
-    int scelta,n, i,trovato ;
+    int scelta,n,j, i,trovato ;
 
     do{
     printf("\n----menù-----\n");
