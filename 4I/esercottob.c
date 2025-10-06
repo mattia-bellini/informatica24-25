@@ -12,7 +12,7 @@
 
 
 
-void inserisci_valori(int *array, int inizio, int fine) {
+int* inserisci_valori(int *array, int inizio, int fine) {
 	for (int i = inizio; i < fine; i++) {
 		printf("Inserisci il valore per l'elemento %d: ", i + 1);
 		scanf("%d", &array[i]);
@@ -31,8 +31,7 @@ int* ridimensiona_array(int *array, int nuova_dim) {
 	int *tmp = realloc(array, nuova_dim * sizeof(int));
 	if (tmp == NULL) {
 		printf("Errore di realloc!\n");
-		free(array);
-		exit(1);
+		
 	}
 	return tmp;
 }
