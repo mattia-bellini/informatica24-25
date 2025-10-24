@@ -1,6 +1,6 @@
 /*verificare se la stringa è palindroma 
 ES: osso è palindroma mentre ciao no
-*/
+*/ 
 
 #include <stdio.h>
 #include <stdlib.h>
