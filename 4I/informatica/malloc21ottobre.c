@@ -5,7 +5,7 @@
 
 typedef char* string;
 void compatta(string buffer, int len){
-    if(len>0&&buffer[len-1]=='\n'){
+    if(len>&&buffer[len-1]=='\n'){
         buffer[len-1]='\0';
         len--;
     }

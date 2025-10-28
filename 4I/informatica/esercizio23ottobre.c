@@ -22,7 +22,7 @@ int palindroma(stringa s,int dim){
         for( i=0, j=dim-1; i<dim/2;i++,j--){
             if(s[i]!=s[j])
                 flag=1;
-
+                
 
         }
         return flag;
