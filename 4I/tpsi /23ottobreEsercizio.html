@@ -20,14 +20,39 @@
             }
         </style>
         <script>
+            var dimcarattere=15;
+            var larghezza=400;
             function scrivi(){
                 document.getElementById("output").innerHTML=messaggio.value; 
             }
             function colora(){
                 var msg=document.getElementById("messaggio").value;
                 var color=document.getElementById("colore").value;
-                document.getElementById("output").innerHTML=msg;
+               document.getElementById("output").innerHTML=msg;
                 document.getElementById("output").style.color=color;
+            }
+            function AllargaCarattere(){
+                dimcarattere++;
+                document.getElementById("output").style.fontSize=dimcarattere +"px";
+
+            }
+            function DiminuisciCarattere(){
+                dimcarattere--;
+                document.getElementById("output").style.fontSize=dimcarattere +"px";
+
+
+            }
+            function aumentadiv(){
+                larghezza+=50;
+                document.getElementById("output").style.width=larghezza +"px";
+
+
+
+            }
+            function diminuiscidiv(){
+                larghezza-=50;
+                document.getElementById("output").style.width=larghezza +"px";
+
             }
         </script>
     </head>
@@ -42,6 +67,10 @@
             <input type="button" value="clicca" onclick="scrivi();"></input>
         </br></br>
             <input type="button" value="cambia colore testo" onclick="colora();"></input>
+            <input type="button" value="Aumenta carattere" onclick="AllargaCarattere();"></input>
+            <input type="button" value="Diminuisci carattere" onclick="DiminuisciCarattere();"></input>
+            <input type="button" value="aumenta larghezza" onclick="aumentadiv();"></input>
+            <input type="button" value="diminuisci larghezza" onclick="diminuiscidiv();"></input>
             <div id="output"></div>
         </form>
     </body>
