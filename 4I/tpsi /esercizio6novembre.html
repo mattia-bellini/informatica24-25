@@ -1,15 +1,28 @@
+<!--
+esercizio che ti inserice tre immagini un cerchio, rettangolo, triangolo
+e quando vai sull immagine con il mouse la pagina ti diventa tutta del colore della figura
+--> 
 <!DOCTYPE html>
 <html>
-
-</html>
-
-
-
-
+<head>
+    <title>Figure e Colori</title>
+</head>
 <body>
+    <h1>Passa il mouse sulle figure</h1>
+    
+    <div onmouseover="document.body.style.backgroundColor='yellow'">
+        <img src="cerchio.png" width="150">
+        <p>Cerchio</p>
+    </div>
+    <div onmouseover="document.body.style.backgroundColor='grey'">
+        <img src="rettangolo.png" width="150">
+        <p>Rettangolo</p>
+    </div>
+
+    <div onmouseover="document.body.style.backgroundColor='purple'">
+        <img src="triangolo.png" width="150">
+        <p>Triangolo</p>
+    </div>
 
 </body>
-
-
-
 </html>
