@@ -2,6 +2,7 @@
     "files.associations": {
         "SCAMBIO.C": "cpp",
         "stdio.h": "c",
-        "random": "c"
+        "random": "c",
+        "SOTTORTRINGA.C": "cpp"
     }
 }
