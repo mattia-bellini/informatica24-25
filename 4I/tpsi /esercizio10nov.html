@@ -1,0 +1,65 @@
+<!--creare un gioco in cui inserito il valore bisogna indovinare il numero ,
+ range 100 se lo scarto supera 20 la pagina diventa rossa, se inferiorte a 10 gialla
+  se inferiore a 5 la pagina diventa verde se indovina mette pagina verde e scritta grande HAI VINTO-->
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Indovina il numero</title>
+<style>
+  body {
+     text-align:center; 
+     font-family:Arial; 
+    }
+  #messaggio { 
+    font-size:20px; 
+    margin-top:20px; 
+}
+
+  .vittoria { 
+    font-size:40px;
+   font-weight:bold;
+ }
+
+</style>
+</head>
+<body>
+<h1>Indovina il numero 1-100</h1>
+<input id="inputNumero" type="number" min="1" max="100" />
+<button id="pulsanteControlla">Prova</button>
+<p id="messaggio"></p>
+
+<script>
+  let numeroSegreto = Math.floor(Math.random() * 101);
+
+  function controllaNumero() {
+    const numeroInserito = Number(document.getElementById('inputNumero').value);
+    const messaggio = document.getElementById('messaggio');
+
+    if (!numeroInserito) return;
+
+    let differenza = Math.abs(numeroSegreto - numeroInserito);
+
+    if (numeroInserito === numeroSegreto) {
+      document.body.style.background = 'lightgreen';
+      messaggio.innerHTML = '<span class="vittoria">HAI VINTO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</span>';
+    }
+
+    if (differenza > 20) {
+      document.body.style.background = 'red';
+      messaggio.textContent = 'Troppo lontano!';
+    } else if (differenza < 5) {
+      document.body.style.background = 'lightgreen';
+      messaggio.textContent = 'Molto vicino!';
+    } else if (differenza < 10) {
+      document.body.style.background = 'yellow';
+      messaggio.textContent = 'Vicino!';
+    }
+  }
+
+  document.getElementById('pulsanteControlla').addEventListener('click', controllaNumero);
+</script>
+</body>
+</html>
+
