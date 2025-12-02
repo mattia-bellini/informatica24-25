@@ -5,7 +5,6 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8" />
 <title>Indovina il numero</title>
 <style>
   body {
@@ -26,8 +25,10 @@
 </head>
 <body>
 <h1>Indovina il numero 1-100</h1>
+
 <input id="inputNumero" type="number" min="1" max="100" />
 <button id="pulsanteControlla">Prova</button>
+<button id="pulsanteRicomincia">Rigioca</button>
 <p id="messaggio"></p>
 
 <script>
@@ -36,30 +37,34 @@
   function controllaNumero() {
     const numeroInserito = Number(document.getElementById('inputNumero').value);
     const messaggio = document.getElementById('messaggio');
-
     if (!numeroInserito) return;
 
     let differenza = Math.abs(numeroSegreto - numeroInserito);
 
-    if (numeroInserito === numeroSegreto) {
+    if (differenza == 0) {
       document.body.style.background = 'lightgreen';
       messaggio.innerHTML = '<span class="vittoria">HAI VINTO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</span>';
-    }
-
-    if (differenza > 20) {
-      document.body.style.background = 'red';
-      messaggio.textContent = 'Troppo lontano!';
-    } else if (differenza < 5) {
+    } else if (differenza <= 5) {
       document.body.style.background = 'lightgreen';
       messaggio.textContent = 'Molto vicino!';
-    } else if (differenza < 10) {
+    } else if (differenza <= 10) {
       document.body.style.background = 'yellow';
       messaggio.textContent = 'Vicino!';
+    } else {
+      document.body.style.background = 'red';
+      messaggio.textContent = 'Troppo lontano!';
     }
+  }
+  function ricominciaGioco() {
+    numeroSegreto = Math.floor(Math.random() * 101); 
+    document.body.style.background = 'white';        
+    document.getElementById('messaggio').textContent = ''; 
+    document.getElementById('inputNumero').value = ''; 
+    document.getElementById('inputNumero').focus(); 
   }
 
   document.getElementById('pulsanteControlla').addEventListener('click', controllaNumero);
+  document.getElementById('pulsanteRicomincia').addEventListener('click', ricominciaGioco);
 </script>
 </body>
 </html>
-
