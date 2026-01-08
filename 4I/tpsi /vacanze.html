@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>Somma e Pari/Dispari</title>
+    <style>
+        #risultato {
+            width: 200px;
+            padding: 20px;
+            margin-top: 15px;
+            text-align: center;
+            font-size: 18px;
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Somma di due numeri</h2>
+
+    <input type="number" id="num1" placeholder="Numero 1">
+    <input type="number" id="num2" placeholder="Numero 2">
+    <br><br>
+
+    <button onclick="somma()">Somma</button>
+    <button onclick="verificaPariDispari()">Pari / Dispari</button>
+
+    <div id="risultato">Risultato</div>
+
+    <script>
+        let totale = 0;
+
+        function somma() {
+            let n1 = parseInt(document.getElementById("num1").value);
+            let n2 = parseInt(document.getElementById("num2").value);
+
+            totale = n1 + n2;
+            document.getElementById("risultato").innerHTML = totale;
+        }
+
+        function verificaPariDispari() {
+            let div = document.getElementById("risultato");
+
+            if (totale % 2 === 0) {
+                div.style.backgroundColor = "lightblue";
+                alert("Il numero è PARI");
+            } else {
+                div.style.backgroundColor = "lightcoral";
+                alert("Il numero è DISPARI");
+            }
+        }
+    </script>
+
+</body>
+</html>
