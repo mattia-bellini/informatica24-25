@@ -1,0 +1,373 @@
+<!--ESERCIZIO ANIMAZIONI!-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			.box {
+				width: 50px;
+				height: 50px;
+				background-color: red;
+				position: relative;
+				left: 0;
+				transition: left 1s ease;
+			}
+		
+		</style>
+		<script>
+let moved = false;
+
+function moveBox() {
+  const box = document.getElementById("box");
+
+  if (!moved) {
+    box.style.left = "200px";
+  } else {
+    box.style.left = "0px";
+  }
+
+  moved = !moved;
+}
+</script>
+	</head>
+	<body>
+		<div class="box" id="box"></div>
+		<button onclick="moveBox()">Muovi</button>
+	</body>
+</html>
+
+<!--ESERCIZIO ANIMAZIONI 2 !-->
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #contenitore{
+            width:200px;
+            height:30px;
+            padding:20px;
+            background-color: yellow;
+            border: 4px solid orange;
+            border-radius: 4px;
+            text-align: center;
+            transition: background-color 1s linear;
+            width 1s ease-out;
+            height 1s ease-out;
+            border-radius 1s ease-in;
+        }
+        #contenitoere:hover{
+            background-color: red;
+            width:300px;
+            height:300px;
+            border-radius: 50%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contenitore">
+        <p>CIAO</p>
+
+    </div>
+</body>
+
+</html>
+
+<!--
+esercizio che ti inserice tre immagini un cerchio, rettangolo, triangolo
+e quando vai sull immagine con il mouse la pagina ti diventa tutta del colore della figura
+--> 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Figure e Colori</title>
+</head>
+<body>
+    <h1>Passa il mouse sulle figure</h1>
+    
+    <div onmouseover="document.body.style.backgroundColor='yellow'">
+        <img src="cerchio.png" width="150">
+        <p>Cerchio</p>
+    </div>
+    <div onmouseover="document.body.style.backgroundColor='grey'">
+        <img src="rettangolo.png" width="150">
+        <p>Rettangolo</p>
+    </div>
+
+    <div onmouseover="document.body.style.backgroundColor='purple'">
+        <img src="triangolo.png" width="150">
+        <p>Triangolo</p>
+    </div>
+
+<!--creare un gioco in cui inserito il valore bisogna indovinare il numero ,
+ range 100 se lo scarto supera 20 la pagina diventa rossa, se inferiorte a 10 gialla
+  se inferiore a 5 la pagina diventa verde se indovina mette pagina verde e scritta grande HAI VINTO-->
+
+<!doctype html>
+<html>
+<head>
+<title>Indovina il numero</title>
+<style>
+  body {
+     text-align:center; 
+     font-family:Arial; 
+    }
+  #messaggio { 
+    font-size:20px; 
+    margin-top:20px; 
+}
+
+  .vittoria { 
+    font-size:40px;
+   font-weight:bold;
+ }
+
+</style>
+</head>
+<body>
+<h1>Indovina il numero 1-100</h1>
+
+<input id="inputNumero" type="number" min="1" max="100" />
+<button id="pulsanteControlla">Prova</button>
+<button id="pulsanteRicomincia">Rigioca</button>
+<p id="messaggio"></p>
+
+<script>
+  let numeroSegreto = Math.floor(Math.random() * 101);
+
+  function controllaNumero() {
+    const numeroInserito = Number(document.getElementById('inputNumero').value);
+    const messaggio = document.getElementById('messaggio');
+    if (!numeroInserito) return;
+
+    let differenza = Math.abs(numeroSegreto - numeroInserito);
+
+    if (differenza == 0) {
+      document.body.style.background = 'lightgreen';
+      messaggio.innerHTML = '<span class="vittoria">HAI VINTO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</span>';
+    } else if (differenza <= 5) {
+      document.body.style.background = 'lightgreen';
+      messaggio.textContent = 'Molto vicino!';
+    } else if (differenza <= 10) {
+      document.body.style.background = 'yellow';
+      messaggio.textContent = 'Vicino!';
+    } else {
+      document.body.style.background = 'red';
+      messaggio.textContent = 'Troppo lontano!';
+    }
+  }
+  function ricominciaGioco() {
+    numeroSegreto = Math.floor(Math.random() * 101); 
+    document.body.style.background = 'white';        
+    document.getElementById('messaggio').textContent = ''; 
+    document.getElementById('inputNumero').value = ''; 
+    document.getElementById('inputNumero').focus(); 
+  }
+
+  document.getElementById('pulsanteControlla').addEventListener('click', controllaNumero);
+  document.getElementById('pulsanteRicomincia').addEventListener('click', ricominciaGioco);
+</script>
+</body>
+</html>
+</body>
+</html>
+
+<!--TEXT AREA-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TEXT AREA</title>
+    <style>
+    #output {
+        width: 300px;
+        height:200px;
+        border: 2px solid rebeccapurple;
+
+    }
+
+    </style>
+<script>
+    function scrivi() {
+        documento.getElementById("output").innerHTML =description.value;
+
+    }
+</script>
+
+</head>
+<body>
+<form name="moduli">
+    <label>Lascia un commento: </label>
+    <input type="text" id="description" name="description" maxlength="200"> </input>
+    </br></br></br>
+    <input type="button" value="Clicca" onclick()="scrivi();"></input></br></br>
+    <div id="output"></div>
+    </form>
+</body>
+
+
+</html>
+
+<!--INIZIO DEL JAVASCPRIT-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Javascript</title>
+<script>
+    function mostraOra(){
+        let d= new Date();  //var dichiara la variabile oppure si usa let
+        var ora =d.toLocaleTimeString().
+    //alert(ora); stampa l'ora
+        document.body.innerHTML += "<p>l'ora attuale è: </p>";  //il += serve per trattenere il pulsante senno scrive sopra a quello che c'era nella pagina
+        document.body.innerHTML += ora;
+
+
+}
+
+
+</script>
+
+</head>
+<body>
+<form>
+    <input type="button" onclick="mostraOra()" value="Che ora è?">
+</form>
+
+</body>
+
+
+</html>
+
+<!--CALCOLO SOMMA DI DUE NUMERI-->
+
+<!DOCTYPE html>
+<html>
+    <head><title>Sommatoria</title></head>
+        
+    
+    
+    <body>
+        <h2>Somma di due numeri</h2><br>
+        <input type="number" id="num1" placeholder="Inserisci il primo numero" name="num1">
+        <input type="number" id="num2" placeholder="Inserisci il secondo numero" name="num2">
+        <button id="sommabt">Calcola somma</button><br><br>
+        <!--<input type="button" value="calcola somma">-->
+        <label>Risultato:</label><div id="risultato">0</div>
+        <script>
+            const input1=document.getElementById("num1");
+            const input1=document.getElementById("num2");
+            const bottone=document.getElementById("sommabt");
+            const risultato=document.getElementById("risultato");
+            
+            bottone.addEventListener("click",function(){
+                const valore1=parseFloat(input1.value);
+                const valore2=parseFloat(input2.value);
+
+                const somma=valore1+valore2;
+                risultato.textContent=somma;
+            });
+
+
+
+
+        
+        </script>
+        
+    </body>
+
+
+</html>
+
+
+<!--CALCOLO DEI VALORI-->
+
+<!DOCTYPE html>
+<html>
+    <head><title>somma volori</title></head>
+    <script>
+      // Selezioniamo gli elementi dal DOM
+      const input1 = document.getElementById("num1");
+      const input2 = document.getElementById("num2");
+      const risultato = document.getElementById("risultato");
+      const bottone = document.getElementById("sommaBtn");
+
+      // Aggiungiamo un "ascoltatore" per il click
+      function calcola(){
+       
+        const valore1 = parseFloat(input1.value) || 0;
+        const valore2 = parseFloat(input2.value) || 0;
+
+        // Calcoliamo la somma
+        const somma = valore1 + valore2;
+
+        // Mostriamo il risultato
+        risultato.textContent = somma;
+      }
+    </script>
+  <body>
+    <h2>Somma valori</h2>
+
+    <input id="num1" type="number" placeholder="Primo numero">
+    <input id="num2" type="number" placeholder="Secondo numero">
+    <input type="button" value="Calcola somma" onclick="calcola()";>
+
+    <p>Risultato: <span id="risultato">0</span></p>
+
+    
+  </body>
+</html>
+
+<!--SONNA PARI/DISPARI-->
+<!DOCTYPE html>
+
+<head>
+
+    <title>Somma e Pari/Dispari</title>
+    <style>
+        #risultato {
+            width: 200px;
+            padding: 20px;
+            margin-top: 15px;
+            text-align: center;
+            font-size: 18px;
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Somma di due numeri</h2>
+
+    <input type="number" id="num1" placeholder="Numero 1">
+    <input type="number" id="num2" placeholder="Numero 2">
+    <br><br>
+
+    <button onclick="somma()">Somma</button>
+    <button onclick="verificaPariDispari()">Pari / Dispari</button>
+
+    <div id="risultato">Risultato</div>
+
+    <script>
+        let totale = 0;
+
+        function somma() {
+            let n1 = parseInt(document.getElementById("num1").value);
+            let n2 = parseInt(document.getElementById("num2").value);
+
+            totale = n1 + n2;
+            document.getElementById("risultato").innerHTML = totale;
+        }
+
+        function verificaPariDispari() {
+            let div = document.getElementById("risultato");
+
+            if (totale % 2 === 0) {
+                div.style.backgroundColor = "lightblue";
+                alert("Il numero è PARI");
+            } else {
+                div.style.backgroundColor = "lightcoral";
+                alert("Il numero è DISPARI");
+            }
+        }
+    </script>
+
+</body>
+</html>
