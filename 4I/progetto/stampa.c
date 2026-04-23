@@ -16,6 +16,22 @@ void stampa_inventario(Inventario* i) {
         current = current->next;
     }
     
+    switch(current->tipo){
+        case POZIONE:
+        printf("Pozione con cura %d\n", current->val);
+        break;
+        case ARMA:
+        printf("Arma con danno %d\n", current->val);
+        break;  
+        case ARMATURA:
+        printf("Armatura con difesa %d\n", current->val);   
+        case CHIAVE:
+        printf("Questa chiave sblocca una porta %d\n", current->val);
+        break;
+        case torcia:
+        printf("Questa torcia ti permette di vedere al buio\n",current->val);
+        break;
+    }
 }
   
 
