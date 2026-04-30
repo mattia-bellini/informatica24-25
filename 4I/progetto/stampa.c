@@ -61,3 +61,6 @@ TipoOggetto tipo_oggetto(char input){
     else if(strcmp(input, "torcia") == 0)
         return TORCIA;
 }
+
+/*funzione che descrive la mappa*/
+void  descrivimappa
