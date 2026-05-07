@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progetto Informatica - Sito Web</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        /* Aggiungo un po' di padding alle sezioni per non farle stare attaccate */
+        section {
+            padding: 60px 0;
+        }
+        /* Colore di sfondo per differenziare le zone */
+        .bg-custom {
+            background-color: #f4f4f4;
+        }
+        footer {
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand" href="#">MIO SITO</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#chi-siamo">Chi Siamo</a></li>
+                <li class="nav-item"><a class="nav-link" href="#servizi">Servizi</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contatti">Contatti</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="p-5 mb-4 bg-light border-bottom">
+    <div class="container py-5 text-center">
+        <h1 class="display-5 fw-bold">Benvenuti nel mio Progetto</h1>
+        <p class="col-md-8 fs-4 mx-auto">Questo è un sito d'esempio realizzato utilizzando il framework Bootstrap 5 per la lezione di Informatica.</p>
+        <a href="#servizi" class="btn btn-primary btn-lg">Guarda i Servizi</a>
+    </div>
+</header>
+
+<section id="chi-siamo" class="container">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <h2>Chi Siamo</h2>
+            <p>Siamo un gruppo di studenti appassionati di programmazione e web design. Questo sito serve a dimostrare le potenzialità della griglia di Bootstrap.</p>
+            <p>Usiamo classi come <strong>container</strong>, <strong>row</strong> e <strong>col</strong> per rendere tutto responsive.</p>
+        </div>
+        <div class="col-md-6">
+            <img src="https://via.placeholder.com/500x300" class="img-fluid rounded shadow" alt="Immagine ufficio">
+        </div>
+    </div>
+</section>
+
+<section id="servizi" class="bg-custom">
+    <div class="container">
+        <h2 class="text-center mb-5">I Nostri Servizi</h2>
+        <div class="row g-4">
+            
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Sviluppo Web</h5>
+                        <p class="card-text">Creazione di siti web statici e dinamici utilizzando HTML, CSS e JavaScript.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Grafica Digitale</h5>
+                        <p class="card-text">Realizzazione di loghi e contenuti visuali per i social network e per il web.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Assistenza PC</h5>
+                        <p class="card-text">Supporto tecnico per la risoluzione di problemi software e hardware su PC e Laptop.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="contatti" class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h2 class="text-center mb-4">Contattaci</h2>
+            <form action="#">
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome Completo</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Inserisci il tuo nome" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Indirizzo Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="nome@esempio.it" required>
+                </div>
+                <div class="mb-3">
+                    <label for="messaggio" class="form-label">Messaggio</label>
+                    <textarea class="form-control" id="messaggio" rows="4" placeholder="Scrivi qui..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Invia Messaggio</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-dark text-white text-center">
+    <div class="container">
+        <p class="mb-0">© 2026 Progetto di Classe 4ª - Informatica</p>
+        <small>Realizzato con Bootstrap 5</small>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

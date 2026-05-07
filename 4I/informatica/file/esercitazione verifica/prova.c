@@ -3,26 +3,19 @@
 #include <stdlib.h>
 #include <string.h>
 
-void numeriInteri(){
-    FILE *fp=fopen("numeri.txt","wr")
-    if(fp==NULL){
-        printf("Errore nell'aprire il file");
-        return 1
-    }
-int n1,n2,n3;
-fprintf("INserisci il numero: %d\n", n);
+typedef struct Prodotto {
+    char nome[50];
+    float prezzo;
+};
 
-
-
-
-
+void InserisciProdotto(){
+FILE *fp=fopen("prova.txt","wb");
+if(fp==NULL){
+    fprintf();
+    return 1;
 }
+ 
 
-
-
-
-
-int main(){
 
 
 }

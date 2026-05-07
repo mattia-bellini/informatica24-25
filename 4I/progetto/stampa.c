@@ -63,4 +63,5 @@ TipoOggetto tipo_oggetto(char input){
 }
 
 /*funzione che descrive la mappa*/
-void  descrivimappa
+
+void descriviMappa()
